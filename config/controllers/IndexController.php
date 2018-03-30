@@ -20,8 +20,9 @@ function testAction(){
 
 function indexAction($smarty){
     
-    d($smarty);
     $smarty->assign('pageTitle', 'Главная страница сайта');
     
+    loadTemplate($smarty, 'header');
     loadTemplate($smarty, 'index');
+    loadTemplate($smarty, 'footer');
 }
