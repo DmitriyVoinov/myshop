@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 
  *  Файл настроек.
@@ -9,7 +10,6 @@
 define ('PathPrefix', '../controllers/');
 define ('PathPostfix', 'Controller.php');
 //<
-
 
 //> Используемый шаблон.
 $template = 'default';
@@ -31,4 +31,6 @@ $smarty->setTemplateDir(TemplatePrefix);
 $smarty->setCompileDir('../tmp/smarty/templates_c');
 $smarty->setCacheDir('../tmp/smarty/cache');
 $smarty->setConfigDir('../library/Smarty/configs');
+
 $smarty->assign('teplateWebPath', TemplateWebPath);
+//<
